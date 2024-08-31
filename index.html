@@ -88,6 +88,78 @@
                         </div>
                       </div>
                     <!-- parallelogram card -->
+
+                    <!-- rhombus card start -->
+                    <div class="card bg-base-100 w-96 shadow-xl">
+                      <figure>
+                        <img
+                          src="images/rhombus.png"
+                          alt="Shoes" />
+                      </figure>
+                      <div class="card-body">
+                        <h2 class="card-title">rhombus</h2>
+                        <p class="text-2xl">Area (A) = 0.5 x d <sub>1</sub> x d <sub>2</sub></p>
+                        <div class="mb-5">
+                          <input id="rhombus-d1-field" class="w-24 text-2xl p-2 rounded-sm mb-5" type="text" placeholder="D1"> <span class="mr-5 ml-2">cm</span>
+                          <input id="rhombus-d2-field" class="w-24 text-2xl p-2 rounded-sm mb-5" type="text" placeholder="D2"> <span>cm</span>
+                        </div>
+                        <div class="card-actions ">
+                          <div>
+                            <p class="text-2xl mb-8">Area: <span id="rhombus-area">0</span>  <span>Cm </span></p>
+                          </div>
+                          <button class="btn btn-primary w-full" onclick="calculateRhombusArea()">Calculate</button>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- rhombus card end -->
+
+                    <!-- pentagon card start -->
+                    <div class="card bg-base-100 w-96 shadow-xl">
+                      <figure>
+                        <img
+                          src="images/pentagon.png"
+                          alt="pentagon" />
+                      </figure>
+                      <div class="card-body">
+                        <h2 class="card-title">Pentagon</h2>
+                        <p class="text-2xl">Area (A) = 0.5 x p x b</p>
+                        <div>
+                          <input id="pentagon-pi" class="w-24 text-2xl p-2 rounded-sm mb-5" type="text" placeholder="P"> <span>cm</span>
+                          <input id="pentagon-base" class="w-24 text-2xl p-2 rounded-sm mb-5" type="text" placeholder="B"> <span>cm</span>
+                        </div>
+                        <div class="card-actions">
+                          <div>
+                            <p class="text-2xl mb-8">Area: <span id="pentagon-area">0</span>  <span>Cm </span></p>
+                          </div>
+                          <button onclick="calculatePentagonArea()" class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- pentagon  end-->
+
+                    <!-- ellipse start -->
+                    <div class="card bg-base-100 w-96 shadow-xl">
+                      <figure>
+                        <img
+                          src="images/ellipse.png"
+                          alt="ellipse" />
+                      </figure>
+                      <div class="card-body">
+                        <h2 class="card-title">ellipse</h2>
+                        <p class="text-2xl">Area (A) = π x a x b</p>
+                        <div>
+                          <input id="ellipse-major-radius" class="w-24 text-2xl p-2 rounded-sm mb-5" type="text" placeholder="A"> <span>cm</span>
+                          <input id="ellipse-minor-raius" class="w-24 text-2xl p-2 rounded-sm mb-5" type="text" placeholder="B"> <span>cm</span>
+                        </div>
+                        <div class="card-actions">
+                          <div>
+                            <p class="text-2xl mb-8">Area: <span id="ellipse-area">0</span> <span>Cm </span></p>
+                          </div>
+                          <button onclick="calculateEllipseArea()" class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- ellipse end -->
              </div>
              <!-- shape card container -->
              <!-- area calculation container -->
@@ -103,9 +175,12 @@
         
        
     </main>
-
+    <script src="js/common.js"></script>
     <script src="js/triangle-calculate.js"></script>
     <script src="js/rectangle.js"></script>
     <script src="js/parallelogram.js"></script>
+    <script src="js/rhombus.js"></script>
+    <script src="js/ellipse.js"></script>
+    <script src="js/pentagon.js"></script>
 </body>
 </html>

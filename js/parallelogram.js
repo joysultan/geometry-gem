@@ -1,20 +1,11 @@
 function parallelogramArea(){
-    const parallelogramBaseField = document.getElementById('parallelogram-base-field');
-    const parallelogramBaseValue = parallelogramBaseField.value;
-    const parallelogramBase = parseFloat(parallelogramBaseValue);
+    const parallelogramBase = getInputValueById('parallelogram-base-field');
 
-    parallelogramBaseField.value = '';
+    const parallelogramHeight = getInputValueById('parallelogram-height-field');
 
-    const parallelogramHeightField = document.getElementById('parallelogram-height-field');
-    const parallelogramHeightValue = parallelogramHeightField.value;
-    const parallelogramHeight = parseFloat(parallelogramHeightValue);
-
-    parallelogramHeightField.value = '';
-    
     const area = parallelogramBase * parallelogramHeight;
 
-    const parallelogramArea = document.getElementById('parallelogram-area');
-    parallelogramArea.innerText = area;
+    setTextElementById('parallelogram-area', area)
 
     
 }
